@@ -43,24 +43,31 @@
             // 
             // lboConsulta
             // 
+            this.lboConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.lboConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lboConsulta.ForeColor = System.Drawing.Color.White;
             this.lboConsulta.FormattingEnabled = true;
             this.lboConsulta.Location = new System.Drawing.Point(48, 86);
             this.lboConsulta.Name = "lboConsulta";
-            this.lboConsulta.Size = new System.Drawing.Size(162, 251);
+            this.lboConsulta.Size = new System.Drawing.Size(162, 247);
             this.lboConsulta.TabIndex = 1;
             this.lboConsulta.SelectedIndexChanged += new System.EventHandler(this.lboConsulta_SelectedIndexChanged);
             // 
             // txtConsulta
             // 
-            this.txtConsulta.Location = new System.Drawing.Point(51, 34);
+            this.txtConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.txtConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConsulta.ForeColor = System.Drawing.Color.White;
+            this.txtConsulta.Location = new System.Drawing.Point(47, 34);
             this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.Size = new System.Drawing.Size(162, 20);
+            this.txtConsulta.Size = new System.Drawing.Size(162, 13);
             this.txtConsulta.TabIndex = 2;
             this.txtConsulta.TextChanged += new System.EventHandler(this.txtConsulta_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(48, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 13);
@@ -70,6 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(48, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(161, 13);
@@ -79,7 +87,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 34);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(225, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 13);
             this.label3.TabIndex = 5;
@@ -88,6 +97,7 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(237, 56);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(33, 13);
@@ -97,6 +107,7 @@
             // lblFuncionarios
             // 
             this.lblFuncionarios.AutoSize = true;
+            this.lblFuncionarios.ForeColor = System.Drawing.Color.White;
             this.lblFuncionarios.Location = new System.Drawing.Point(237, 86);
             this.lblFuncionarios.Name = "lblFuncionarios";
             this.lblFuncionarios.Size = new System.Drawing.Size(67, 13);
@@ -106,6 +117,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
             this.lblUsuario.Location = new System.Drawing.Point(237, 110);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
@@ -115,6 +127,7 @@
             // lblDataEmprestimo
             // 
             this.lblDataEmprestimo.AutoSize = true;
+            this.lblDataEmprestimo.ForeColor = System.Drawing.Color.White;
             this.lblDataEmprestimo.Location = new System.Drawing.Point(237, 140);
             this.lblDataEmprestimo.Name = "lblDataEmprestimo";
             this.lblDataEmprestimo.Size = new System.Drawing.Size(87, 13);
@@ -124,6 +137,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
+            this.lblStatus.ForeColor = System.Drawing.Color.White;
             this.lblStatus.Location = new System.Drawing.Point(237, 188);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(37, 13);
@@ -133,6 +147,7 @@
             // lblDataDevolucao
             // 
             this.lblDataDevolucao.AutoSize = true;
+            this.lblDataDevolucao.ForeColor = System.Drawing.Color.White;
             this.lblDataDevolucao.Location = new System.Drawing.Point(237, 163);
             this.lblDataDevolucao.Name = "lblDataDevolucao";
             this.lblDataDevolucao.Size = new System.Drawing.Size(85, 13);
@@ -143,6 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.Controls.Add(this.lblDataDevolucao);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblDataEmprestimo);
