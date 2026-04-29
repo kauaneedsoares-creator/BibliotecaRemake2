@@ -14,9 +14,22 @@ namespace BibliotecaRemake
         [STAThread]
         static void Main()
         {
+            int saida = 1;
+            //ID - Funcionarios
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Criando o login da biblioteca
+            Login entrado = new Login();
+            entrado.saida = false;
+           Application.Run(entrado);
+            if (entrado.saida )
+            {
+                entrado.Dispose();
+                entrado.Close();
+                Application.Run(new Form1());
+
+            }
+           
         }
     }
 }
