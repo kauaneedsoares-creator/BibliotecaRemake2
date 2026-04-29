@@ -66,6 +66,12 @@
     <Compile Include="Consulta.Designer.cs">
       <DependentUpon>Consulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Devolucao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Devolucao.Designer.cs">
+      <DependentUpon>Devolucao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Emprestimo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucao.resx">
+      <DependentUpon>Devolucao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emprestimo.resx">
       <DependentUpon>Emprestimo.cs</DependentUpon>

@@ -24,7 +24,7 @@ namespace BibliotecaRemake
         {
             Process.Start("https://www.google.com");
         }
-
+        
         private void btnEntre_Click(object sender, EventArgs e)
         {
            verificarAcessoTableAdapter consuta = new verificarAcessoTableAdapter();
