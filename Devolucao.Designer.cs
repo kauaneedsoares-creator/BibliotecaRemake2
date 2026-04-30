@@ -30,15 +30,11 @@
         {
             this.cboFuncionario = new System.Windows.Forms.ComboBox();
             this.btnDevolucao = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUsuarios = new System.Windows.Forms.TextBox();
-            this.txtLivros = new System.Windows.Forms.TextBox();
+            this.txtConsuta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lboLivros = new System.Windows.Forms.ListBox();
+            this.lboConsuta = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lboUsuarios = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // cboFuncionario
@@ -64,17 +60,6 @@
             this.btnDevolucao.UseVisualStyleBackColor = false;
             this.btnDevolucao.Click += new System.EventHandler(this.btnDevolucao_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(260, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 16);
-            this.label5.TabIndex = 100;
-            this.label5.Text = "Digite um Cliente";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -82,27 +67,18 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(18, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 16);
+            this.label3.Size = new System.Drawing.Size(179, 16);
             this.label3.TabIndex = 99;
-            this.label3.Text = "Digite um livro para consutar";
+            this.label3.Text = "Digite um livro  para consutar";
             // 
-            // txtUsuarios
+            // txtConsuta
             // 
-            this.txtUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
-            this.txtUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuarios.Location = new System.Drawing.Point(263, 85);
-            this.txtUsuarios.Name = "txtUsuarios";
-            this.txtUsuarios.Size = new System.Drawing.Size(236, 20);
-            this.txtUsuarios.TabIndex = 98;
-            // 
-            // txtLivros
-            // 
-            this.txtLivros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
-            this.txtLivros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLivros.Location = new System.Drawing.Point(21, 85);
-            this.txtLivros.Name = "txtLivros";
-            this.txtLivros.Size = new System.Drawing.Size(227, 20);
-            this.txtLivros.TabIndex = 97;
+            this.txtConsuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.txtConsuta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtConsuta.Location = new System.Drawing.Point(21, 85);
+            this.txtConsuta.Name = "txtConsuta";
+            this.txtConsuta.Size = new System.Drawing.Size(478, 20);
+            this.txtConsuta.TabIndex = 97;
             // 
             // label2
             // 
@@ -111,31 +87,21 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(18, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 16);
+            this.label2.Size = new System.Drawing.Size(75, 16);
             this.label2.TabIndex = 96;
-            this.label2.Text = "Livros";
+            this.label2.Text = "Empretimo ";
             // 
-            // label1
+            // lboConsuta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(260, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
-            this.label1.TabIndex = 95;
-            this.label1.Text = "Usuarios";
-            // 
-            // lboLivros
-            // 
-            this.lboLivros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
-            this.lboLivros.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lboLivros.ForeColor = System.Drawing.Color.White;
-            this.lboLivros.FormattingEnabled = true;
-            this.lboLivros.Location = new System.Drawing.Point(21, 139);
-            this.lboLivros.Name = "lboLivros";
-            this.lboLivros.Size = new System.Drawing.Size(227, 195);
-            this.lboLivros.TabIndex = 94;
+            this.lboConsuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.lboConsuta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lboConsuta.ForeColor = System.Drawing.Color.White;
+            this.lboConsuta.FormattingEnabled = true;
+            this.lboConsuta.Location = new System.Drawing.Point(21, 139);
+            this.lboConsuta.Name = "lboConsuta";
+            this.lboConsuta.Size = new System.Drawing.Size(478, 195);
+            this.lboConsuta.TabIndex = 94;
+          
             // 
             // label4
             // 
@@ -148,17 +114,6 @@
             this.label4.TabIndex = 93;
             this.label4.Text = "Selecione quem é Você";
             // 
-            // lboUsuarios
-            // 
-            this.lboUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
-            this.lboUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lboUsuarios.ForeColor = System.Drawing.Color.White;
-            this.lboUsuarios.FormattingEnabled = true;
-            this.lboUsuarios.Location = new System.Drawing.Point(263, 139);
-            this.lboUsuarios.Name = "lboUsuarios";
-            this.lboUsuarios.Size = new System.Drawing.Size(236, 195);
-            this.lboUsuarios.TabIndex = 92;
-            // 
             // Devolucao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,15 +121,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.Controls.Add(this.cboFuncionario);
             this.Controls.Add(this.btnDevolucao);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtUsuarios);
-            this.Controls.Add(this.txtLivros);
+            this.Controls.Add(this.txtConsuta);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lboLivros);
+            this.Controls.Add(this.lboConsuta);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lboUsuarios);
             this.Name = "Devolucao";
             this.Size = new System.Drawing.Size(523, 405);
             this.ResumeLayout(false);
@@ -186,14 +137,10 @@
 
         private System.Windows.Forms.ComboBox cboFuncionario;
         private System.Windows.Forms.Button btnDevolucao;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsuarios;
-        private System.Windows.Forms.TextBox txtLivros;
+        private System.Windows.Forms.TextBox txtConsuta;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lboLivros;
+        private System.Windows.Forms.ListBox lboConsuta;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox lboUsuarios;
     }
 }

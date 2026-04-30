@@ -19,6 +19,7 @@ namespace BibliotecaRemake
         private Emprestimo emprestimo;
         private Usuarios usuarios;
         private Consulta consulta;
+        private Devolucao devolucao;
     
         
         public Form1()
@@ -139,6 +140,19 @@ namespace BibliotecaRemake
             consulta.Dock = DockStyle.Fill;
             tcEmprestimo.SelectTab(tpConsutar);
             tpConsutar.Controls.Add(consulta);
+        }
+
+        private void btnDevolver_Click(object sender, EventArgs e)
+        {
+         
+            MudarCorDeBotoes();
+            ((Button)sender).BackColor = Color.FromArgb(78, 88, 150);
+            btnDevolver.ForeColor = Color.White;
+            if (devolucao != null) devolucao.Dispose();
+            devolucao = new Devolucao();
+            devolucao.Dock = DockStyle.Fill;
+            tcEmprestimo.SelectTab(tpDevolver);
+            tpDevolver.Controls.Add(devolucao);
         }
     }
 }

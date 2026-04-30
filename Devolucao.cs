@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static BibliotecaRemake.BibliotecaDBDataSet;
 
 namespace BibliotecaRemake
 {
@@ -21,20 +22,52 @@ namespace BibliotecaRemake
             foreach (var Funcionarios in obterFuncionarios) cboFuncionario.Items.Add(Funcionarios);
             cboFuncionario.SelectedIndex = 0;
             //ate aqui
-            LivrosTableAdapter livros = new LivrosTableAdapter();
-            var obterLivros = from linha in livros.GetData()
-                              select linha;
-            foreach (var livro in obterLivros) lboLivros.Items.Add(livro);
+            RequisicoesTableAdapter Devolucao = new RequisicoesTableAdapter();
+            var obterDevolucao = from linha in Devolucao.GetData()
+                                 select linha;
+            foreach (var devolucao in obterDevolucao) lboConsuta.Items.Add(devolucao);
             //
-            UsuariosTableAdapter usuarios = new UsuariosTableAdapter();
-            var obterUsuarios = from linha in usuarios.GetData()
-                                select linha;
-            foreach (var usuario in obterUsuarios) lboUsuarios.Items.Add(usuario);
+          
         }
+
+
 
         private void btnDevolucao_Click(object sender, EventArgs e)
         {
+           
+        
+            RequisicoesRow livroDevolver = lboConsuta.SelectedItem as RequisicoesRow;
+            FuncionariosRow funcionarioSelecionado = cboFuncionario.SelectedItem as FuncionariosRow;
 
+            if (livroDevolver == null)
+            {
+                MessageBox.Show("Selecione um empréstimo!");
+                return;
+            }
+
+            if (funcionarioSelecionado == null)
+            {
+                MessageBox.Show("Selecione um funcionário!");
+                return;
+            }
+
+            QueriesTableAdapter consulta = new QueriesTableAdapter();
+
+            consulta.DevolverLivro
+            (
+                livroDevolver.LivroID,
+                livroDevolver.UsuarioID,
+                funcionarioSelecionado.FuncionarioID
+            );
+
+            MessageBox.Show("Empréstimo devolvido com sucesso!");
+
+            // remove da lista após devolver
+            lboConsuta.Items.Remove(livroDevolver);
         }
     }
+
+    
+      
+    
 }

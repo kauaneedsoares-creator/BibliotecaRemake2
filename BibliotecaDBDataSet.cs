@@ -7,6 +7,12 @@ namespace BibliotecaRemake
 
     partial class BibliotecaDBDataSet
     {
+        partial class RequisicoesDataTable
+        {
+        }
+
+
+
         partial class RequisicoesRow
         {
             public string Devolucao

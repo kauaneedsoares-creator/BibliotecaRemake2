@@ -187,6 +187,7 @@
             this.btnDevolver.TabIndex = 1;
             this.btnDevolver.Text = "Devolver";
             this.btnDevolver.UseVisualStyleBackColor = false;
+            this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
             // 
             // btnEmprestar
             // 
