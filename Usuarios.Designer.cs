@@ -55,6 +55,7 @@
             this.btnLimparSelecão.TabIndex = 45;
             this.btnLimparSelecão.Text = "Limpar Selecão";
             this.btnLimparSelecão.UseVisualStyleBackColor = false;
+            this.btnLimparSelecão.Click += new System.EventHandler(this.btnLimparSelecão_Click);
             // 
             // btnAjustes
             // 
@@ -68,6 +69,7 @@
             this.btnAjustes.TabIndex = 44;
             this.btnAjustes.Text = "Cadastrar";
             this.btnAjustes.UseVisualStyleBackColor = false;
+            this.btnAjustes.Click += new System.EventHandler(this.btnAjustes_Click);
             // 
             // btnAcoes
             // 
@@ -81,6 +83,7 @@
             this.btnAcoes.TabIndex = 43;
             this.btnAcoes.Text = "Atulizar Lista";
             this.btnAcoes.UseVisualStyleBackColor = false;
+            this.btnAcoes.Click += new System.EventHandler(this.btnAcoes_Click);
             // 
             // txtPesquisa
             // 
@@ -92,6 +95,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(236, 17);
             this.txtPesquisa.TabIndex = 62;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // label4
             // 
@@ -114,6 +118,7 @@
             this.lboUsuarios.Name = "lboUsuarios";
             this.lboUsuarios.Size = new System.Drawing.Size(236, 195);
             this.lboUsuarios.TabIndex = 47;
+            this.lboUsuarios.SelectedIndexChanged += new System.EventHandler(this.lboUsuarios_SelectedIndexChanged);
             // 
             // label1
             // 

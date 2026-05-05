@@ -98,9 +98,7 @@ namespace BibliotecaRemake
             ((Button)sender).BackColor = Color.FromArgb(78, 88, 150);
             btnEmpréstimo.ForeColor = Color.White;
             tcControle.SelectTab(tpEmpréstimo);
-            emprestimo = new Emprestimo();
-            emprestimo.Dock = DockStyle.Fill;
-            tpEmpréstimo.Controls.Add(emprestimo);
+           
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -153,6 +151,11 @@ namespace BibliotecaRemake
             devolucao.Dock = DockStyle.Fill;
             tcEmprestimo.SelectTab(tpDevolver);
             tpDevolver.Controls.Add(devolucao);
+        }
+
+        private void tcEmprestimo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

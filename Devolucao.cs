@@ -25,47 +25,97 @@ namespace BibliotecaRemake
             RequisicoesTableAdapter Devolucao = new RequisicoesTableAdapter();
             var obterDevolucao = from linha in Devolucao.GetData()
                                  select linha;
-            foreach (var devolucao in obterDevolucao) lboConsuta.Items.Add(devolucao);
+            foreach (var devolucao in obterDevolucao) lboDevolucao.Items.Add(devolucao);
             //
           
+        }
+        private void AtulizarLista() //issa vai atulizar seria como Salvar/Editar
+        {
+            lboDevolucao.Items.Clear();
+            RequisicoesTableAdapter usuariosDados = new RequisicoesTableAdapter();
+            var dados = from linha in usuariosDados.GetData()
+                        select linha;
+            foreach (RequisicoesRow dado in dados) lboDevolucao.Items.Add(dado);
         }
 
 
 
         private void btnDevolucao_Click(object sender, EventArgs e)
         {
-           
-        
-            RequisicoesRow livroDevolver = lboConsuta.SelectedItem as RequisicoesRow;
-            FuncionariosRow funcionarioSelecionado = cboFuncionario.SelectedItem as FuncionariosRow;
+            var requisicaoSelecionada = lboDevolucao.SelectedItem as RequisicoesRow;
 
-            if (livroDevolver == null)
+            if (requisicaoSelecionada == null)
             {
-                MessageBox.Show("Selecione um empréstimo!");
+                MessageBox.Show(
+                    "Selecione uma requisição para devolver.",
+                    "Erro",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
                 return;
             }
 
-            if (funcionarioSelecionado == null)
+            try
             {
-                MessageBox.Show("Selecione um funcionário!");
-                return;
+                QueriesTableAdapter consulta = new QueriesTableAdapter();
+
+                consulta.DevolverLivro(requisicaoSelecionada.RequisicaoID);
+
+                MessageBox.Show(
+                    $"Devolução realizada com sucesso!\n\n" +
+                    $"Requisição ID: {requisicaoSelecionada.RequisicaoID}\n" +
+                    $"Data de devolução: {DateTime.Now:dd/MM/yyyy}",
+                    "Sucesso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
+                //Atualiza lista
+                AtulizarLista();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    "Erro ao realizar devolução",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
 
-            QueriesTableAdapter consulta = new QueriesTableAdapter();
 
-            consulta.DevolverLivro
-            (
-                livroDevolver.LivroID,
-                livroDevolver.UsuarioID,
-                funcionarioSelecionado.FuncionarioID
-            );
-
-            MessageBox.Show("Empréstimo devolvido com sucesso!");
-
-            // remove da lista após devolver
-            lboConsuta.Items.Remove(livroDevolver);
         }
+
+        private void lboDevolucao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RequisicoesRow requisicao = lboDevolucao.SelectedItem as RequisicoesRow;
+            if (requisicao == null) return;
+            lblDataEmprestimo.Text = requisicao.DataRequisicao.ToString();
+            lblDataDevolucao.Text = requisicao.Devolucao;
+            lblStatus.Text = requisicao.Status.ToString();
+            LivrosTableAdapter livros = new LivrosTableAdapter();
+            LivrosRow livro = (from linha in livros.GetData()
+                               where linha.LivroID == requisicao.LivroID
+                               select linha).FirstOrDefault();
+            if (livro == null) return;
+            lblTitulo.Text = livro.Titulo;
+            FuncionariosTableAdapter funcionarios = new FuncionariosTableAdapter();
+            FuncionariosRow funcionario = (from linha in funcionarios.GetData()
+                                           where linha.FuncionarioID == requisicao.FuncionarioID
+                                           select linha).FirstOrDefault();
+            if (funcionario == null) return;
+            lblFuncionario.Text = funcionario.NomeCompleto;
+            UsuariosTableAdapter usuarios = new UsuariosTableAdapter();
+            UsuariosRow usuario = (from linha in usuarios.GetData()
+                                   where linha.UsuarioID == requisicao.UsuarioID
+                                   select linha).FirstOrDefault();
+            if (usuario == null) return;
+            lblUsuario.Text = usuario.Nome;
+        }
+
+       
     }
+    
 
     
       

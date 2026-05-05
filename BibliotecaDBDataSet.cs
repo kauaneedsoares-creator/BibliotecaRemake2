@@ -7,11 +7,15 @@ namespace BibliotecaRemake
 
     partial class BibliotecaDBDataSet
     {
-        partial class RequisicoesDataTable
+        partial class UsuariosRow
         {
+            public override string ToString()
+            {
+
+                return Nome.ToString();
+
+            }
         }
-
-
 
         partial class RequisicoesRow
         {
@@ -29,6 +33,7 @@ namespace BibliotecaRemake
                     {
                         return "Devolvido";
                     }
+                    return Status.ToString();
                 }
             }
             public override string ToString()
@@ -39,9 +44,14 @@ namespace BibliotecaRemake
                                    select linha).FirstOrDefault();
 
 
-                return livro.Titulo;
+                return livro.Titulo + " - " + this.Status;
+
             }
+
+        
         }
+
+    
 
 
         partial class FuncionariosRow
@@ -51,13 +61,7 @@ namespace BibliotecaRemake
                 return NomeUsuario.ToString();
             }
         }
-        partial class UsuariosRow
-        {
-            public override string ToString()
-            {
-                return Nome.ToString();
-            }
-        }
+
         partial class LivrosRow
         {
             public override string ToString()

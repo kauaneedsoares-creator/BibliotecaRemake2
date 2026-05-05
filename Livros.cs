@@ -33,7 +33,7 @@ namespace BibliotecaRemake
         }
         private void LimparElementos()
         {
-            txtTitulo.Text = "";
+            txtTitulo.Text = ""; 
             txtAutor.Text = "";
             txtEditora.Text = "";
             txtGenero.Text = "";

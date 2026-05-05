@@ -248,6 +248,7 @@
             this.tcEmprestimo.SelectedIndex = 0;
             this.tcEmprestimo.Size = new System.Drawing.Size(589, 378);
             this.tcEmprestimo.TabIndex = 0;
+            this.tcEmprestimo.SelectedIndexChanged += new System.EventHandler(this.tcEmprestimo_SelectedIndexChanged);
             // 
             // tpEPrincipal
             // 
