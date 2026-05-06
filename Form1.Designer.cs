@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tcControle = new MaterialSkin.Controls.MaterialTabControl();
             this.TpTelaPricipal = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,6 +54,8 @@
             this.btnLivros = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tcControle.SuspendLayout();
             this.TpTelaPricipal.SuspendLayout();
             this.tpEmpréstimo.SuspendLayout();
@@ -385,12 +389,40 @@
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
+            // btnSair
+            // 
+            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
+            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.ImageIndex = 0;
+            this.btnSair.ImageList = this.imageList1;
+            this.btnSair.Location = new System.Drawing.Point(12, 386);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(173, 55);
+            this.btnSair.TabIndex = 16;
+            this.btnSair.Text = "Sair";
+            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "sair.png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(800, 453);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tcControle);
             this.Name = "Form1";
@@ -433,6 +465,8 @@
         private System.Windows.Forms.TabPage tpEmprestar;
         private System.Windows.Forms.TabPage tpDevolver;
         private System.Windows.Forms.TabPage tpConsutar;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

@@ -21,9 +21,7 @@ namespace BibliotecaRemake
             AtulizarLista();
 
             //Isso só vai mostra as Informções 
-            UsuariosTableAdapter usuarios = new UsuariosTableAdapter();
-            var obterUsuarios = from linha in usuarios.GetData() select linha;
-            foreach (var Usuarios in obterUsuarios) lboUsuarios.Items.Add(Usuarios);
+          
            
         }
         private void AtulizarLista() //issa vai atulizar seria como Salvar/Editar

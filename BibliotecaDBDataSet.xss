@@ -7,11 +7,11 @@
 <DiagramLayout xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ex:showrelationlabel="False" ViewPortX="1143" ViewPortY="0" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:verificarAcesso" ZOrder="9" X="1153" Y="129" Height="96" Width="232" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
-    <Shape ID="DesignTable:Funcionarios" ZOrder="8" X="1431" Y="83" Height="248" Width="218" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="197" />
+    <Shape ID="DesignTable:Funcionarios" ZOrder="8" X="1431" Y="83" Height="267" Width="218" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="197" />
     <Shape ID="DesignTable:Livros" ZOrder="2" X="1719" Y="83" Height="229" Width="179" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="178" />
     <Shape ID="DesignTable:Requisicoes" ZOrder="7" X="1968" Y="83" Height="210" Width="212" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="159" />
     <Shape ID="DesignTable:Usuarios" ZOrder="6" X="2250" Y="83" Height="172" Width="194" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
-    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="1" X="2099" Y="467" Height="86" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="82" />
+    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="1" X="2099" Y="467" Height="67" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="63" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:FK__Requisico__Funci__2DE6D218" ZOrder="5" LineWidth="11">

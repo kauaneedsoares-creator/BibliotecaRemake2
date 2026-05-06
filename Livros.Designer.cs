@@ -151,7 +151,7 @@
             // 
             this.lboLivros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
             this.lboLivros.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lboLivros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(255)))), ((int)(((byte)(234)))));
+            this.lboLivros.ForeColor = System.Drawing.Color.White;
             this.lboLivros.FormattingEnabled = true;
             this.lboLivros.Location = new System.Drawing.Point(206, 144);
             this.lboLivros.Name = "lboLivros";

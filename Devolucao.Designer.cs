@@ -31,7 +31,7 @@
             this.cboFuncionario = new System.Windows.Forms.ComboBox();
             this.btnDevolucao = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDevolucao = new System.Windows.Forms.TextBox();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lboDevolucao = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -82,14 +82,15 @@
             this.label3.TabIndex = 99;
             this.label3.Text = "Digite um livro  para consutar";
             // 
-            // txtDevolucao
+            // txtPesquisa
             // 
-            this.txtDevolucao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
-            this.txtDevolucao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDevolucao.Location = new System.Drawing.Point(21, 85);
-            this.txtDevolucao.Name = "txtDevolucao";
-            this.txtDevolucao.Size = new System.Drawing.Size(478, 20);
-            this.txtDevolucao.TabIndex = 97;
+            this.txtPesquisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.txtPesquisa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPesquisa.Location = new System.Drawing.Point(21, 85);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(478, 20);
+            this.txtPesquisa.TabIndex = 97;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtDevolucao_TextChanged);
             // 
             // label2
             // 
@@ -226,7 +227,7 @@
             this.Controls.Add(this.cboFuncionario);
             this.Controls.Add(this.btnDevolucao);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDevolucao);
+            this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lboDevolucao);
             this.Controls.Add(this.label4);
@@ -245,7 +246,7 @@
         private System.Windows.Forms.ComboBox cboFuncionario;
         private System.Windows.Forms.Button btnDevolucao;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDevolucao;
+        private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lboDevolucao;
         private System.Windows.Forms.Label label4;

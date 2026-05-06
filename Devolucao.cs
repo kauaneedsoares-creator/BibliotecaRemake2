@@ -42,25 +42,33 @@ namespace BibliotecaRemake
 
         private void btnDevolucao_Click(object sender, EventArgs e)
         {
+            //    // Pega a requisição selecionada pelo usuário no ListBox
             var requisicaoSelecionada = lboDevolucao.SelectedItem as RequisicoesRow;
 
+            // Verifica se o usuário selecionou alguma requisição
             if (requisicaoSelecionada == null)
             {
+                // Exibe mensagem de erro caso nada tenha sido selecionado
                 MessageBox.Show(
                     "Selecione uma requisição para devolver.",
                     "Erro",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
+                    MessageBoxButtons.OK, //
+                    MessageBoxIcon.Error //
                 );
                 return;
             }
 
             try
             {
+                //
                 QueriesTableAdapter consulta = new QueriesTableAdapter();
 
+                // Executa a procedure que realiza a devolução no banco de dados
+                // Normalmente isso atualiza a data de devolução e/ou status
                 consulta.DevolverLivro(requisicaoSelecionada.RequisicaoID);
 
+
+                // Exibe mensagem de sucesso com informações da devolução
                 MessageBox.Show(
                     $"Devolução realizada com sucesso!\n\n" +
                     $"Requisição ID: {requisicaoSelecionada.RequisicaoID}\n" +
@@ -73,13 +81,14 @@ namespace BibliotecaRemake
                 //Atualiza lista
                 AtulizarLista();
             }
+           
             catch (Exception ex)
             {
-                MessageBox.Show(
-                    ex.Message,
-                    "Erro ao realizar devolução",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error
+                MessageBox.Show( 
+                    ex.Message, 
+                    "Erro ao realizar devolução", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error  
                 );
             }
 
@@ -113,11 +122,24 @@ namespace BibliotecaRemake
             lblUsuario.Text = usuario.Nome;
         }
 
-       
+        private void txtDevolucao_TextChanged(object sender, EventArgs e)
+        {
+            TextBox pesquisa = sender as TextBox;
+            if (pesquisa.Text == "")
+            {
+                AtulizarLista();
+                return;
+            }
+            lboDevolucao.ClearSelected();
+            lboDevolucao.Items.Clear();
+            string textoDigitado = txtPesquisa.Text;
+            RequisicoesTableAdapter dados = new RequisicoesTableAdapter();
+            var livros = from linha in dados.GetData()
+                         where linha.Status.ToLower()
+                        .Contains(textoDigitado.ToLower())
+                         select linha;
+            foreach (var livro in livros) lboDevolucao.Items.Add(livro);
+        }
     }
-    
-
-    
       
-    
 }

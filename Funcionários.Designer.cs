@@ -182,12 +182,13 @@
             // 
             this.lboFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
             this.lboFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lboFuncionarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(255)))), ((int)(((byte)(234)))));
+            this.lboFuncionarios.ForeColor = System.Drawing.Color.White;
             this.lboFuncionarios.FormattingEnabled = true;
             this.lboFuncionarios.Location = new System.Drawing.Point(222, 104);
             this.lboFuncionarios.Name = "lboFuncionarios";
             this.lboFuncionarios.Size = new System.Drawing.Size(236, 195);
             this.lboFuncionarios.TabIndex = 58;
+            this.lboFuncionarios.SelectedIndexChanged += new System.EventHandler(this.lboFuncionarios_SelectedIndexChanged);
             // 
             // btnLimparSelecão
             // 
