@@ -101,7 +101,7 @@
             // 
             // tpFuncionarios
             // 
-            this.tpFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(6)))), ((int)(((byte)(153)))));
+            this.tpFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.tpFuncionarios.Location = new System.Drawing.Point(4, 22);
             this.tpFuncionarios.Name = "tpFuncionarios";
             this.tpFuncionarios.Padding = new System.Windows.Forms.Padding(3);

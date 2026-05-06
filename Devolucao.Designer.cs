@@ -41,11 +41,16 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblDataDevolucao = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboFuncionario
             // 
             this.cboFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.cboFuncionario.ForeColor = System.Drawing.Color.White;
             this.cboFuncionario.FormattingEnabled = true;
             this.cboFuncionario.Location = new System.Drawing.Point(21, 35);
             this.cboFuncionario.Name = "cboFuncionario";
@@ -123,7 +128,8 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(374, 139);
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(3, 39);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(97, 13);
             this.lblUsuario.TabIndex = 103;
@@ -132,7 +138,8 @@
             // lblFuncionario
             // 
             this.lblFuncionario.AutoSize = true;
-            this.lblFuncionario.Location = new System.Drawing.Point(377, 161);
+            this.lblFuncionario.ForeColor = System.Drawing.Color.White;
+            this.lblFuncionario.Location = new System.Drawing.Point(3, 26);
             this.lblFuncionario.Name = "lblFuncionario";
             this.lblFuncionario.Size = new System.Drawing.Size(62, 13);
             this.lblFuncionario.TabIndex = 104;
@@ -141,7 +148,8 @@
             // lblDataEmprestimo
             // 
             this.lblDataEmprestimo.AutoSize = true;
-            this.lblDataEmprestimo.Location = new System.Drawing.Point(377, 190);
+            this.lblDataEmprestimo.ForeColor = System.Drawing.Color.White;
+            this.lblDataEmprestimo.Location = new System.Drawing.Point(3, 13);
             this.lblDataEmprestimo.Name = "lblDataEmprestimo";
             this.lblDataEmprestimo.Size = new System.Drawing.Size(102, 13);
             this.lblDataEmprestimo.TabIndex = 105;
@@ -150,7 +158,8 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(380, 232);
+            this.lblStatus.ForeColor = System.Drawing.Color.White;
+            this.lblStatus.Location = new System.Drawing.Point(3, 65);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(37, 13);
             this.lblStatus.TabIndex = 106;
@@ -159,7 +168,8 @@
             // lblDataDevolucao
             // 
             this.lblDataDevolucao.AutoSize = true;
-            this.lblDataDevolucao.Location = new System.Drawing.Point(379, 203);
+            this.lblDataDevolucao.ForeColor = System.Drawing.Color.White;
+            this.lblDataDevolucao.Location = new System.Drawing.Point(3, 52);
             this.lblDataDevolucao.Name = "lblDataDevolucao";
             this.lblDataDevolucao.Size = new System.Drawing.Size(100, 13);
             this.lblDataDevolucao.TabIndex = 107;
@@ -168,23 +178,51 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(380, 120);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(3, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(33, 13);
             this.lblTitulo.TabIndex = 108;
             this.lblTitulo.Text = "Titulo";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.lblTitulo, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblStatus, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblDataDevolucao, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblFuncionario, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblDataEmprestimo, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblUsuario, 0, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 5);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(132, 123);
+            this.tableLayoutPanel1.TabIndex = 109;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(364, 139);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(135, 107);
+            this.panel1.TabIndex = 110;
             // 
             // Devolucao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
-            this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.lblDataDevolucao);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.lblDataEmprestimo);
-            this.Controls.Add(this.lblFuncionario);
-            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cboFuncionario);
             this.Controls.Add(this.btnDevolucao);
             this.Controls.Add(this.label3);
@@ -194,6 +232,9 @@
             this.Controls.Add(this.label4);
             this.Name = "Devolucao";
             this.Size = new System.Drawing.Size(523, 405);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +255,7 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblDataDevolucao;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

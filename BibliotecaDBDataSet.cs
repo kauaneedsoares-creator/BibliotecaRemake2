@@ -7,6 +7,10 @@ namespace BibliotecaRemake
 
     partial class BibliotecaDBDataSet
     {
+        partial class FuncionariosDataTable
+        {
+        }
+
         partial class UsuariosRow
         {
             public override string ToString()
@@ -48,17 +52,17 @@ namespace BibliotecaRemake
 
             }
 
-        
+
         }
 
-    
+
 
 
         partial class FuncionariosRow
         {
             public override string ToString()
             {
-                return NomeUsuario.ToString();
+                return NomeCompleto.ToString();
             }
         }
 

@@ -37,15 +37,16 @@
             this.lblNomeCompleto = new System.Windows.Forms.Label();
             this.lblNomeUsuario = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtGargo = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.txtNomeFuncionarios = new System.Windows.Forms.TextBox();
             this.txtFuncionarios = new System.Windows.Forms.TextBox();
             this.lboFuncionarios = new System.Windows.Forms.ListBox();
             this.btnLimparSelecão = new System.Windows.Forms.Button();
             this.btnAjustes = new System.Windows.Forms.Button();
             this.btnAcoes = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAcoess = new System.Windows.Forms.Button();
+            this.btnAjustess = new System.Windows.Forms.Button();
+            this.cbxAtivo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtPesquisa
@@ -58,6 +59,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(143, 17);
             this.txtPesquisa.TabIndex = 70;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // label4
             // 
@@ -74,7 +76,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 253);
+            this.label2.Location = new System.Drawing.Point(33, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 68;
@@ -86,7 +88,7 @@
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(34, 269);
+            this.txtSenha.Location = new System.Drawing.Point(34, 260);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(143, 17);
             this.txtSenha.TabIndex = 67;
@@ -95,7 +97,7 @@
             // 
             this.lblEmail1.AutoSize = true;
             this.lblEmail1.ForeColor = System.Drawing.Color.White;
-            this.lblEmail1.Location = new System.Drawing.Point(33, 200);
+            this.lblEmail1.Location = new System.Drawing.Point(33, 191);
             this.lblEmail1.Name = "lblEmail1";
             this.lblEmail1.Size = new System.Drawing.Size(38, 13);
             this.lblEmail1.TabIndex = 66;
@@ -105,7 +107,7 @@
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.ForeColor = System.Drawing.Color.White;
-            this.lblCargo.Location = new System.Drawing.Point(31, 144);
+            this.lblCargo.Location = new System.Drawing.Point(31, 135);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(35, 13);
             this.lblCargo.TabIndex = 65;
@@ -115,7 +117,7 @@
             // 
             this.lblNomeCompleto.AutoSize = true;
             this.lblNomeCompleto.ForeColor = System.Drawing.Color.White;
-            this.lblNomeCompleto.Location = new System.Drawing.Point(31, 88);
+            this.lblNomeCompleto.Location = new System.Drawing.Point(31, 79);
             this.lblNomeCompleto.Name = "lblNomeCompleto";
             this.lblNomeCompleto.Size = new System.Drawing.Size(82, 13);
             this.lblNomeCompleto.TabIndex = 64;
@@ -138,21 +140,21 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(34, 216);
+            this.txtEmail.Location = new System.Drawing.Point(34, 207);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(143, 17);
             this.txtEmail.TabIndex = 62;
             // 
-            // txtGargo
+            // txtCargo
             // 
-            this.txtGargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
-            this.txtGargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGargo.ForeColor = System.Drawing.Color.White;
-            this.txtGargo.Location = new System.Drawing.Point(34, 160);
-            this.txtGargo.Name = "txtGargo";
-            this.txtGargo.Size = new System.Drawing.Size(143, 17);
-            this.txtGargo.TabIndex = 61;
+            this.txtCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.ForeColor = System.Drawing.Color.White;
+            this.txtCargo.Location = new System.Drawing.Point(34, 151);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(143, 17);
+            this.txtCargo.TabIndex = 61;
             // 
             // txtNomeFuncionarios
             // 
@@ -160,7 +162,7 @@
             this.txtNomeFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomeFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeFuncionarios.ForeColor = System.Drawing.Color.White;
-            this.txtNomeFuncionarios.Location = new System.Drawing.Point(34, 104);
+            this.txtNomeFuncionarios.Location = new System.Drawing.Point(34, 95);
             this.txtNomeFuncionarios.Name = "txtNomeFuncionarios";
             this.txtNomeFuncionarios.Size = new System.Drawing.Size(143, 17);
             this.txtNomeFuncionarios.TabIndex = 60;
@@ -199,6 +201,7 @@
             this.btnLimparSelecão.TabIndex = 73;
             this.btnLimparSelecão.Text = "Limpar Selecão";
             this.btnLimparSelecão.UseVisualStyleBackColor = false;
+            this.btnLimparSelecão.Click += new System.EventHandler(this.btnLimparSelecão_Click);
             // 
             // btnAjustes
             // 
@@ -226,41 +229,54 @@
             this.btnAcoes.Text = "Atulizar Lista";
             this.btnAcoes.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnAcoess
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(154, 333);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 40);
-            this.button1.TabIndex = 71;
-            this.button1.Text = "Atulizar Lista";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAcoess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
+            this.btnAcoess.FlatAppearance.BorderSize = 0;
+            this.btnAcoess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcoess.ForeColor = System.Drawing.Color.White;
+            this.btnAcoess.Location = new System.Drawing.Point(154, 333);
+            this.btnAcoess.Name = "btnAcoess";
+            this.btnAcoess.Size = new System.Drawing.Size(97, 40);
+            this.btnAcoess.TabIndex = 71;
+            this.btnAcoess.Text = "Atulizar Lista";
+            this.btnAcoess.UseVisualStyleBackColor = false;
+            this.btnAcoess.Click += new System.EventHandler(this.btnAcoess_Click);
             // 
-            // button2
+            // btnAjustess
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(34, 333);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 40);
-            this.button2.TabIndex = 72;
-            this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAjustess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
+            this.btnAjustess.FlatAppearance.BorderSize = 0;
+            this.btnAjustess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjustess.ForeColor = System.Drawing.Color.White;
+            this.btnAjustess.Location = new System.Drawing.Point(34, 333);
+            this.btnAjustess.Name = "btnAjustess";
+            this.btnAjustess.Size = new System.Drawing.Size(111, 40);
+            this.btnAjustess.TabIndex = 72;
+            this.btnAjustess.Text = "Cadastrar";
+            this.btnAjustess.UseVisualStyleBackColor = false;
+            this.btnAjustess.Click += new System.EventHandler(this.btnAjustess_Click);
+            // 
+            // cbxAtivo
+            // 
+            this.cbxAtivo.AutoSize = true;
+            this.cbxAtivo.Location = new System.Drawing.Point(33, 292);
+            this.cbxAtivo.Name = "cbxAtivo";
+            this.cbxAtivo.Size = new System.Drawing.Size(50, 17);
+            this.cbxAtivo.TabIndex = 74;
+            this.cbxAtivo.Text = "Ativo";
+            this.cbxAtivo.UseVisualStyleBackColor = true;
             // 
             // Funcionários
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
+            this.Controls.Add(this.cbxAtivo);
             this.Controls.Add(this.btnLimparSelecão);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAjustess);
             this.Controls.Add(this.btnAjustes);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAcoess);
             this.Controls.Add(this.btnAcoes);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label4);
@@ -271,7 +287,7 @@
             this.Controls.Add(this.lblNomeCompleto);
             this.Controls.Add(this.lblNomeUsuario);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtGargo);
+            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.txtNomeFuncionarios);
             this.Controls.Add(this.txtFuncionarios);
             this.Controls.Add(this.lboFuncionarios);
@@ -293,14 +309,15 @@
         private System.Windows.Forms.Label lblNomeCompleto;
         private System.Windows.Forms.Label lblNomeUsuario;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtGargo;
+        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.TextBox txtNomeFuncionarios;
         private System.Windows.Forms.TextBox txtFuncionarios;
         private System.Windows.Forms.ListBox lboFuncionarios;
         private System.Windows.Forms.Button btnLimparSelecão;
         private System.Windows.Forms.Button btnAjustes;
         private System.Windows.Forms.Button btnAcoes;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAcoess;
+        private System.Windows.Forms.Button btnAjustess;
+        private System.Windows.Forms.CheckBox cbxAtivo;
     }
 }
