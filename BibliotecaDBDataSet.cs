@@ -62,7 +62,7 @@ namespace BibliotecaRemake
         {
             public override string ToString()
             {
-                return NomeCompleto.ToString();
+                return NomeCompleto + " - " + Cargo + " - " + (Ativo ? "Ativo" : "Inativo");// vai mostras no liste listbox 
             }
         }
 
@@ -70,7 +70,7 @@ namespace BibliotecaRemake
         {
             public override string ToString()
             {
-                return Titulo.ToString();
+                return Titulo + " -  " + Genero;
             }
 
         }

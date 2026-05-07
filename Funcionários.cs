@@ -18,15 +18,19 @@ namespace BibliotecaRemake
         {
             InitializeComponent();
             AtulizarLista();
-
-    
-        }
-        private void AtulizarLista()
-        {
             lboFuncionarios.Items.Clear();
             FuncionariosTableAdapter funcionarios = new FuncionariosTableAdapter();
             var obterfuncionarios = from linha in funcionarios.GetData() select linha;
             foreach (var funcionario in obterfuncionarios) lboFuncionarios.Items.Add(funcionario);
+
+        }
+        private void AtulizarLista()
+        {
+            lboFuncionarios.Items.Clear();
+            FuncionariosTableAdapter funcionariosdados = new FuncionariosTableAdapter();
+            var dados = from linha in funcionariosdados.GetData() 
+                        select linha;
+            foreach (FuncionariosRow dado in dados) lboFuncionarios.Items.Add(dado);
 
         }
         private void LimparElementos()
@@ -149,10 +153,12 @@ namespace BibliotecaRemake
             txtCargo.Text = funcionario.Cargo;
             txtEmail.Text = funcionario.Email;
             cbxAtivo.Checked = funcionario.Ativo;
-            txtSenha.Text = funcionario.SenhaHash;
+
             
 
 
         }
+
+       
     }
 }

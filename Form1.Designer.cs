@@ -67,28 +67,30 @@
             // 
             // tcControle
             // 
+            this.tcControle.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tcControle.Controls.Add(this.TpTelaPricipal);
             this.tcControle.Controls.Add(this.tpFuncionarios);
             this.tcControle.Controls.Add(this.tpLivros);
             this.tcControle.Controls.Add(this.tpUsuarios);
             this.tcControle.Controls.Add(this.tpEmpréstimo);
             this.tcControle.Depth = 0;
-            this.tcControle.Location = new System.Drawing.Point(191, 4);
+            this.tcControle.Location = new System.Drawing.Point(191, 0);
             this.tcControle.MouseState = MaterialSkin.MouseState.HOVER;
             this.tcControle.Multiline = true;
             this.tcControle.Name = "tcControle";
             this.tcControle.SelectedIndex = 0;
-            this.tcControle.Size = new System.Drawing.Size(609, 449);
-            this.tcControle.TabIndex = 0;
+            this.tcControle.Size = new System.Drawing.Size(609, 453);
+            this.tcControle.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
+            this.tcControle.TabIndex = 1;
             // 
             // TpTelaPricipal
             // 
             this.TpTelaPricipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.TpTelaPricipal.Controls.Add(this.label1);
-            this.TpTelaPricipal.Location = new System.Drawing.Point(4, 22);
+            this.TpTelaPricipal.Location = new System.Drawing.Point(4, 25);
             this.TpTelaPricipal.Name = "TpTelaPricipal";
             this.TpTelaPricipal.Padding = new System.Windows.Forms.Padding(3);
-            this.TpTelaPricipal.Size = new System.Drawing.Size(601, 423);
+            this.TpTelaPricipal.Size = new System.Drawing.Size(601, 424);
             this.TpTelaPricipal.TabIndex = 0;
             this.TpTelaPricipal.Text = "Tela Pricipal";
             // 
@@ -106,30 +108,30 @@
             // tpFuncionarios
             // 
             this.tpFuncionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
-            this.tpFuncionarios.Location = new System.Drawing.Point(4, 22);
+            this.tpFuncionarios.Location = new System.Drawing.Point(4, 25);
             this.tpFuncionarios.Name = "tpFuncionarios";
             this.tpFuncionarios.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFuncionarios.Size = new System.Drawing.Size(601, 423);
+            this.tpFuncionarios.Size = new System.Drawing.Size(601, 424);
             this.tpFuncionarios.TabIndex = 2;
             this.tpFuncionarios.Text = "Funcionarios";
             // 
             // tpLivros
             // 
-            this.tpLivros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(6)))), ((int)(((byte)(153)))));
-            this.tpLivros.Location = new System.Drawing.Point(4, 22);
+            this.tpLivros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
+            this.tpLivros.Location = new System.Drawing.Point(4, 25);
             this.tpLivros.Name = "tpLivros";
             this.tpLivros.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLivros.Size = new System.Drawing.Size(601, 423);
+            this.tpLivros.Size = new System.Drawing.Size(601, 424);
             this.tpLivros.TabIndex = 3;
             this.tpLivros.Text = "Livros";
             // 
             // tpUsuarios
             // 
-            this.tpUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(6)))), ((int)(((byte)(153)))));
-            this.tpUsuarios.Location = new System.Drawing.Point(4, 22);
+            this.tpUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
+            this.tpUsuarios.Location = new System.Drawing.Point(4, 25);
             this.tpUsuarios.Name = "tpUsuarios";
             this.tpUsuarios.Padding = new System.Windows.Forms.Padding(3);
-            this.tpUsuarios.Size = new System.Drawing.Size(601, 423);
+            this.tpUsuarios.Size = new System.Drawing.Size(601, 424);
             this.tpUsuarios.TabIndex = 4;
             this.tpUsuarios.Text = "Usuarios";
             // 
@@ -138,10 +140,10 @@
             this.tpEmpréstimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.tpEmpréstimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tpEmpréstimo.Controls.Add(this.tableLayoutPanel2);
-            this.tpEmpréstimo.Location = new System.Drawing.Point(4, 22);
+            this.tpEmpréstimo.Location = new System.Drawing.Point(4, 25);
             this.tpEmpréstimo.Name = "tpEmpréstimo";
             this.tpEmpréstimo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpEmpréstimo.Size = new System.Drawing.Size(601, 423);
+            this.tpEmpréstimo.Size = new System.Drawing.Size(601, 424);
             this.tpEmpréstimo.TabIndex = 5;
             this.tpEmpréstimo.Text = "Empréstimo";
             // 
@@ -157,7 +159,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 384F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(595, 417);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(595, 418);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -246,7 +248,7 @@
             this.tcEmprestimo.Controls.Add(this.tpConsutar);
             this.tcEmprestimo.Depth = 0;
             this.tcEmprestimo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcEmprestimo.Location = new System.Drawing.Point(3, 36);
+            this.tcEmprestimo.Location = new System.Drawing.Point(3, 37);
             this.tcEmprestimo.MouseState = MaterialSkin.MouseState.HOVER;
             this.tcEmprestimo.Name = "tcEmprestimo";
             this.tcEmprestimo.SelectedIndex = 0;
@@ -399,12 +401,13 @@
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.ImageIndex = 0;
+            this.btnSair.ImageKey = "sair.png";
             this.btnSair.ImageList = this.imageList1;
-            this.btnSair.Location = new System.Drawing.Point(12, 386);
+            this.btnSair.Location = new System.Drawing.Point(12, 401);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(173, 55);
-            this.btnSair.TabIndex = 16;
+            this.btnSair.Size = new System.Drawing.Size(173, 40);
+            this.btnSair.TabIndex = 22;
+            this.btnSair.TabStop = false;
             this.btnSair.Text = "Sair";
             this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSair.UseVisualStyleBackColor = false;

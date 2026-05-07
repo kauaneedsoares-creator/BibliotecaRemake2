@@ -18,6 +18,9 @@ namespace BibliotecaRemake
         {
             InitializeComponent();
             AtulizarLista();
+          
+
+            label5.ImageAlign = ContentAlignment.MiddleLeft;
         }
         /// <summary>
         /// Pega todos os livros que estão salvos no banco de dados 
@@ -180,5 +183,8 @@ namespace BibliotecaRemake
                          select linha;
             foreach (var livro in livros) lboLivros.Items.Add(livro);
         }
+
+
+        
     }
 }

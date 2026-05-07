@@ -41,6 +41,11 @@
             this.txtTelefoneUsuario = new System.Windows.Forms.TextBox();
             this.txtEmailUsuario = new System.Windows.Forms.TextBox();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLimparSelecão
@@ -49,9 +54,9 @@
             this.btnLimparSelecão.FlatAppearance.BorderSize = 0;
             this.btnLimparSelecão.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimparSelecão.ForeColor = System.Drawing.Color.White;
-            this.btnLimparSelecão.Location = new System.Drawing.Point(251, 288);
+            this.btnLimparSelecão.Location = new System.Drawing.Point(403, 3);
             this.btnLimparSelecão.Name = "btnLimparSelecão";
-            this.btnLimparSelecão.Size = new System.Drawing.Size(187, 45);
+            this.btnLimparSelecão.Size = new System.Drawing.Size(195, 38);
             this.btnLimparSelecão.TabIndex = 45;
             this.btnLimparSelecão.Text = "Limpar Selecão";
             this.btnLimparSelecão.UseVisualStyleBackColor = false;
@@ -63,9 +68,9 @@
             this.btnAjustes.FlatAppearance.BorderSize = 0;
             this.btnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjustes.ForeColor = System.Drawing.Color.White;
-            this.btnAjustes.Location = new System.Drawing.Point(38, 293);
+            this.btnAjustes.Location = new System.Drawing.Point(3, 3);
             this.btnAjustes.Name = "btnAjustes";
-            this.btnAjustes.Size = new System.Drawing.Size(97, 40);
+            this.btnAjustes.Size = new System.Drawing.Size(194, 38);
             this.btnAjustes.TabIndex = 44;
             this.btnAjustes.Text = "Cadastrar";
             this.btnAjustes.UseVisualStyleBackColor = false;
@@ -77,9 +82,9 @@
             this.btnAcoes.FlatAppearance.BorderSize = 0;
             this.btnAcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcoes.ForeColor = System.Drawing.Color.White;
-            this.btnAcoes.Location = new System.Drawing.Point(144, 293);
+            this.btnAcoes.Location = new System.Drawing.Point(203, 3);
             this.btnAcoes.Name = "btnAcoes";
-            this.btnAcoes.Size = new System.Drawing.Size(97, 40);
+            this.btnAcoes.Size = new System.Drawing.Size(194, 38);
             this.btnAcoes.TabIndex = 43;
             this.btnAcoes.Text = "Atulizar Lista";
             this.btnAcoes.UseVisualStyleBackColor = false;
@@ -91,7 +96,7 @@
             this.txtPesquisa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisa.ForeColor = System.Drawing.Color.White;
-            this.txtPesquisa.Location = new System.Drawing.Point(255, 45);
+            this.txtPesquisa.Location = new System.Drawing.Point(275, 110);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(187, 17);
             this.txtPesquisa.TabIndex = 62;
@@ -102,7 +107,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(281, 15);
+            this.label4.Location = new System.Drawing.Point(275, 91);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 16);
             this.label4.TabIndex = 61;
@@ -114,9 +119,9 @@
             this.lboUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lboUsuarios.ForeColor = System.Drawing.Color.White;
             this.lboUsuarios.FormattingEnabled = true;
-            this.lboUsuarios.Location = new System.Drawing.Point(255, 68);
+            this.lboUsuarios.Location = new System.Drawing.Point(275, 133);
             this.lboUsuarios.Name = "lboUsuarios";
-            this.lboUsuarios.Size = new System.Drawing.Size(187, 195);
+            this.lboUsuarios.Size = new System.Drawing.Size(312, 195);
             this.lboUsuarios.TabIndex = 47;
             this.lboUsuarios.SelectedIndexChanged += new System.EventHandler(this.lboUsuarios_SelectedIndexChanged);
             // 
@@ -125,7 +130,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(18, 15);
+            this.label1.Location = new System.Drawing.Point(23, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 16);
             this.label1.TabIndex = 69;
@@ -135,7 +140,7 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.ForeColor = System.Drawing.Color.White;
-            this.lblTelefone.Location = new System.Drawing.Point(18, 178);
+            this.lblTelefone.Location = new System.Drawing.Point(23, 252);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(49, 13);
             this.lblTelefone.TabIndex = 68;
@@ -145,7 +150,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(35, 116);
+            this.lblEmail.Location = new System.Drawing.Point(40, 190);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 67;
@@ -156,7 +161,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
             this.lblNome.ForeColor = System.Drawing.Color.White;
-            this.lblNome.Location = new System.Drawing.Point(32, 59);
+            this.lblNome.Location = new System.Drawing.Point(37, 133);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(35, 13);
             this.lblNome.TabIndex = 66;
@@ -168,7 +173,7 @@
             this.txtTelefoneUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefoneUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefoneUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtTelefoneUsuario.Location = new System.Drawing.Point(73, 167);
+            this.txtTelefoneUsuario.Location = new System.Drawing.Point(78, 241);
             this.txtTelefoneUsuario.Name = "txtTelefoneUsuario";
             this.txtTelefoneUsuario.Size = new System.Drawing.Size(143, 24);
             this.txtTelefoneUsuario.TabIndex = 65;
@@ -179,7 +184,7 @@
             this.txtEmailUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmailUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtEmailUsuario.Location = new System.Drawing.Point(73, 110);
+            this.txtEmailUsuario.Location = new System.Drawing.Point(78, 184);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
             this.txtEmailUsuario.Size = new System.Drawing.Size(143, 24);
             this.txtEmailUsuario.TabIndex = 64;
@@ -190,16 +195,57 @@
             this.txtNomeUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNomeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtNomeUsuario.Location = new System.Drawing.Point(73, 59);
+            this.txtNomeUsuario.Location = new System.Drawing.Point(78, 133);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
             this.txtNomeUsuario.Size = new System.Drawing.Size(143, 24);
             this.txtNomeUsuario.TabIndex = 63;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.btnAjustes, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnAcoes, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnLimparSelecão, 2, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 377);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(601, 44);
+            this.tableLayoutPanel1.TabIndex = 71;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.ImageKey = "(nenhum/a)";
+            this.label5.Location = new System.Drawing.Point(62, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(306, 33);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "   Cadastro de Usuario";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(88)))), ((int)(((byte)(150)))));
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(601, 63);
+            this.panel1.TabIndex = 72;
             // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(68)))), ((int)(((byte)(107)))));
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.lblEmail);
@@ -210,11 +256,11 @@
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lboUsuarios);
-            this.Controls.Add(this.btnLimparSelecão);
-            this.Controls.Add(this.btnAjustes);
-            this.Controls.Add(this.btnAcoes);
             this.Name = "Usuarios";
-            this.Size = new System.Drawing.Size(482, 364);
+            this.Size = new System.Drawing.Size(601, 424);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +280,8 @@
         private System.Windows.Forms.TextBox txtTelefoneUsuario;
         private System.Windows.Forms.TextBox txtEmailUsuario;
         private System.Windows.Forms.TextBox txtNomeUsuario;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
     }
 }
