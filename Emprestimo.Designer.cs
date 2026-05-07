@@ -162,6 +162,7 @@
             // cboFuncionario
             // 
             this.cboFuncionario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(88)))), ((int)(((byte)(110)))));
+            this.cboFuncionario.ForeColor = System.Drawing.Color.White;
             this.cboFuncionario.FormattingEnabled = true;
             this.cboFuncionario.Location = new System.Drawing.Point(27, 93);
             this.cboFuncionario.Name = "cboFuncionario";
